@@ -15,30 +15,19 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html {
-  background-color: ;
-  font-size: ;
-  line-height: ; 
-  font-family: ;
+  font-family: 'Futura','Trebuchet MS','Arial',sans-serif; 
+  font-size: 1.25em; /* 20/16 = 1.25*/
+  line-height: 1.2em /* 24 / 20 = 1.2em */
 }
 
 
- 
-
-#iitlogo {
-    margin-left: auto;
-    margin-right: auto;
-    display:block;
-}
-
-/*all em's are divided by new base 16*/
 h1 {
-  font-size: ;
-  line-height: ;
-  color: ;
-  text-shadow: ;
-  margin-left: auto;
-  margin-right: auto;
-  display:block;
+  text-align: center; /* 80 / 20 = 4em */
+  padding-top: 2em;
+  font-size: 1.75em; /* 30 / 20 = 1.5em */
+  font-weight: 500;
+  color: #C6263D;
+  opacity: .90;
 }
 
 
@@ -50,7 +39,11 @@ h1 {
 
 /* ===== MODULAR STYLES ===== */
 
-
+#iitlogo {
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
 
 /* ===== STATE STYLES ===== */
 .hasjs input[type=""] {
