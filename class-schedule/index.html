@@ -1,154 +1,137 @@
 <!DOCTYPE html>
-<html lang="en" class="nojs">
+<html class="nojs" lang="en">
 <head>
   <title>IIT Academics</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-  <link rel="stylesheet" media="screen" href="../style/screen.css"/>
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0,shrink-to-fit=no" name="viewport">
+  <link href="../style/screen.css" media="screen" rel="stylesheet">
+
+        <nav class="nav">
+          <ul>
+            <li id="active"><a href="../index.html">LOGOUT</a></li>
+            <li><a href="under_construction/index.html">Look-Up Courses</a></li>
+            <li><a href="under_construction/index.html">Add Course</a></li>
+            <li><a href="under_construction/index.html">Drop Course</a></li>
+          </ul>
+</nav>
+
 </head>
 <body>
-<main id="content">
-<header>
-  <h1>Course Scheduling</h1>
-</header>
-<article class="course-options">
-  <article class="section">
-    <li><a class="title" id="logout" href="../index.html">Log Out</a></li>
-    <a class="title" href="#lookupcourse">Look-Up Courses</a>
-    <article id="lookupcourse" class="lucshit">
-      <section>
-        <p> put stuff here related to looking at class options <p>
-      </section>
-    </article>
-  </article>
 
-  <article class="section">
-    <a class="title" href="#addcourse">Add Course</a>
-    <article id="addclass" class="acshit">
-      <section>
-        <p> put stuff here related to adding a class <p>
-      </section>
+  <main id="content">
+    <header>
+      <h1>Course Scheduling</h1>
+    </header>
+    <article id="courses">
+      <h3>Course Schedule</h3>
+      <ul>
+        <li>Please select desired term to view active courses.</li>
+        <li style="list-style: none; display: inline">
+          <section class="tables">
+            <div class="cmenu" style="margin-left: 2em">
+              <h4>Your Courses</h4><button class="term" id="f16">Fall 2016</button> <button class="term" id="s17">Spring 2017</button> <button class="term" id="f17">Fall 2017</button> <button id="back">Back</button>
+            </div>
+            <table class="fall2016">
+              <tr>
+                <th class="hd">Course ID</th>
+                <th class="hd">Course Name</th>
+                <th class="hd">Midterm Grade</th>
+                <th class="hd">Final Grade</th>
+                <th class="hd">Course Meeting Times</th>
+              </tr>
+              <tr>
+                <td>ITM 312</td>
+                <td>Learn C++</td>
+                <td>A</td>
+                <td>A</td>
+                <td>F 10-11:15</td>
+              </tr>
+              <tr>
+                <td>ITMD 361</td>
+                <td>Enhance your web presence</td>
+                <td>B</td>
+                <td>B</td>
+                <td>MW 15:15-16:30</td>
+              </tr>
+              <tr>
+                <td>MATH230</td>
+                <td>Must take class</td>
+                <td>D</td>
+                <td>C</td>
+                <td>TR 10:00-11:15</td>
+              </tr>
+            </table>
+            <table class="spring2017">
+              <tr>
+                <th class="hd">Course ID</th>
+                <th class="hd">Course Name</th>
+                <th class="hd">Midterm Grade</th>
+                <th class="hd">Final Grade</th>
+                <th class="hd">Course Meeting Times</th>
+              </tr>
+              <tr>
+                <td>PSYC 310</td>
+                <td>Learn about people around you</td>
+                <td>A</td>
+                <td>N/A</td>
+                <td>MW 10-11:15</td>
+              </tr>
+              <tr>
+                <td>ITMD311</td>
+                <td>Intro to C++</td>
+                <td>B</td>
+                <td>N/A</td>
+                <td>MW 13:50-15:05</td>
+              </tr>
+              <tr>
+                <td>EG 325</td>
+                <td>Learn how to use Auto CAD</td>
+                <td>A</td>
+                <td>N/A</td>
+                <td>TF 17-18:15</td>
+              </tr>
+              <tr>
+                <td>ITMM471</td>
+                <td>Intro to Project Management</td>
+                <td>A</td>
+                <td>N/A</td>
+                <td>TR 11:25-12:40</td>
+              </tr>
+            </table>
+            <table class="fall2017">
+              <tr>
+                <th class="hd">Course ID</th>
+                <th class="hd">Course Name</th>
+                <th class="hd">Midterm Grade</th>
+                <th class="hd">Final Grade</th>
+                <th class="hd">Course Meeting Times</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td></td>
+              </tr>
+            </table>
+          </section>
+        </li>
+      </ul>
     </article>
-  </article>
-
-  <article class="section">
-    <a class="title" href="#dropcourse">Drop Course</a>
-    <article id="dropclass" class="dcshit">
-      <section>
-        <p> put stuff here related to dropping a class <p>
-      </section>
-    </article>
-  </article>
-</article>
-  <article id="courses">
-    <h3>Course Schedule</h3>
-    <li>Please select desired term to view active courses. All meeting times are in 24hr format. </li>
-   <section class="tables">
-    <ul class="cmenu">
-    	<h4>Your Courses</h4>
-    	<button id="f16" class="term">Fall 2016</button>
-    	<button id="s17" class="term">Spring 2017</button>
-      <button id="f17" class="term">Fall 2017</button>
-    	<button id="back">Back</button>
-    </ul>
-  <table class="fall2016">
-  <tr>
-    <th class="hd">Course ID</th>
-    <th class="hd">Course Name</th>
-    <th class="hd">Midterm Grade</th>
-    <th class="hd">Final Grade</th>
-    <th class="hd">Course Meeting Times</th>
-  </tr>
-  <tr>
-    <td>ITM100</td>
-    <td>Please stay in ITM</td>
-    <td>A</td>
-    <td>A</td>
-    <td>F 10-11:10</td>
-  </tr>
-  <tr>
-    <td>HUM333</td>
-    <td  >Music in Japan in 300 B.C</td>
-    <td>B</td>
-    <td>B</td>
-    <td>MW 13:50-15:05</td>
-  </tr>
-  <tr>
-  	<td>MATH230</td>
-  	<td  >Difficult course!</td>
-  	<td>D</td>
-  	<td>C</td>
-  	<td>TR 11:25-12:40</td>
-  </tr>
-  </table>
-  <table class="spring2017">
-  <tr>
-    <th class="hd">Course ID</th>
-    <th class="hd">Course Name</th>
-    <th class="hd">Midterm Grade</th>
-    <th class="hd">Final Grade</th>
-    <th class="hd">Course Meeting Times</th>
-  </tr>
-  <tr>
-    <td>PSYC300</td>
-    <td  >Intro to your new minor</td>
-    <td>A</td>
-    <td>N/A</td>
-    <td>MW 10-11:10</td>
-  </tr>
-  <tr>
-    <td>ITMD311</td>
-    <td  >Intro to C++</td>
-    <td>B</td>
-    <td>N/A</td>
-    <td>MW 13:50-15:05</td>
-  </tr>
-  <tr>
-  	<td>ITMM471</td>
-  	<td  >Intro to Project Management</td>
-  	<td>A</td>
-  	<td>N/A</td>
-  	<td>TR 11:25-12:40</td>
-  </tr>
-  <tr>
-  	<td>EG225</td>
-  	<td  >Learn to draw a straight line</td>
-  	<td>A</td>
-  	<td>N/A</td>
-  	<td>TF 17-18:15</td>
-  </tr>
-  </table>
-  <table class="fall2017">
-  <tr>
-    <th class="hd">Course ID</th>
-    <th class="hd">Course Name</th>
-    <th class="hd">Midterm Grade</th>
-    <th class="hd">Final Grade</th>
-    <th class="hd">Course Meeting Times</th>
-  </tr>
-  <tr>
-    <td> </td>
-    <td> </td>
-    <td>N/A</td>
-    <td>N/A</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td> </td>
-    <td> </td>
-    <td>N/A</td>
-    <td>N/A</td>
-    <td> </td>
-  </tr>
-  </table>
-  </section>
-  </article>
-</article>
-</main>
-<footer>
-<p class="foot">Site design by Fahad-Moses-Izaaz</p>
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="../js/site.js"></script>
+  </main>
+  <footer>
+    <p class="foot">Site design by Fahad-Moses-Izaaz</p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  </script> 
+  <script src="../js/site.js">
+  </script>
 </body>
 </html>
