@@ -19,6 +19,16 @@ html {
   font-size: 1.25em; /* 20/16 = 1.25*/
   line-height: 1.2em /* 24 / 20 = 1.2em */
   font-weight: 350;
+  
+}
+
+body {
+    
+    background: url(../img/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
 }
 
 
@@ -101,6 +111,7 @@ border: 0;
 
 #login-form {
   background-color: #DCDCDC;
+  max-width: 50%;
   border-radius: 0.3em;
   padding: 1.351em;/*38.4px @ 28.43px;*/
 }
