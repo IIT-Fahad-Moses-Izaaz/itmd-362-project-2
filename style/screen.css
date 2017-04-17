@@ -18,6 +18,7 @@ html {
   font-family: 'Futura','Trebuchet MS','Arial',sans-serif; 
   font-size: 1.25em; /* 20/16 = 1.25*/
   line-height: 1.2em /* 24 / 20 = 1.2em */
+  font-weight: 350;
 }
 
 
@@ -25,11 +26,38 @@ h1 {
   text-align: center; /* 80 / 20 = 4em */
   padding-top: 2em;
   font-size: 1.75em; /* 30 / 20 = 1.5em */
-  font-weight: 500;
+  font-family:inherit;
   color: #C6263D;
   opacity: .90;
 }
 
+h2, h3 {
+  font-size: 1.333em;/*21px @ 16;*/
+  font-family: inherit;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #778899;
+}
+
+li a {
+  text-decoration: none;
+  color: #778899;
+}
+
+/* ==========FORM============= */
+
+input, label {
+  display: block;
+  box-sizing: border-box;
+  font-family: inherit;
+}
 
 
 /* ===== RESPONSIVE MEDIA ===== */
