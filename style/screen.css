@@ -18,6 +18,7 @@ html {
   font-family: 'Futura','Trebuchet MS','Arial',sans-serif; 
   font-size: 1.25em; /* 20/16 = 1.25*/
   line-height: 1.2em /* 24 / 20 = 1.2em */
+  font-weight: 350;
 }
 
 
@@ -25,14 +26,68 @@ h1 {
   text-align: center; /* 80 / 20 = 4em */
   padding-top: 2em;
   font-size: 1.75em; /* 30 / 20 = 1.5em */
-  font-weight: 500;
+  font-family:inherit;
   color: #C6263D;
   opacity: .90;
 }
 
+h2, h3 {
+  font-size: 1.333em;/*21px @ 16;*/
+  font-family: inherit;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #788f99;
+}
+
+li a {
+  text-decoration: none;
+  color: #788f99;
+}
+
+/* ==========FORM============= */
+
+input, label {
+  display: block;
+  box-sizing: border-box;
+  font-family: inherit;
+}
 
 
 /* ===== RESPONSIVE MEDIA ===== */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.menu:hover {
+  color: red;
+}
+
+#toggle{
+  position: relative;
+}
+
+#main-button {
+  background-color: #D3D3D3;
+  position: absolute;
+  width: auto;
+  height: auto;
+  margin: 0em, 0em, 0, -3.25em;
+  padding: 3.125em; /* 50px/16px */
+  padding-top: 0.625em; /* 10px/16px */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s;
+}
+
 
 
 /* ===== LAYOUT STYLES ===== */
@@ -46,13 +101,7 @@ h1 {
 }
 
 /* ===== STATE STYLES ===== */
-.hasjs input[type=""] {
- 
-}
 
-.hasjs input[type=""].active {
-  position: static;
-}
 
 @media screen and (min-width: ) { 
 
