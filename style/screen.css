@@ -6,46 +6,227 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
+/* begin normalize.css form styles */
+/* https://github.com/necolas/normalize.css */
+
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* end normalize.css form styles */
+
 
 /* ===== BASE STYLES ===== */
 
 /*
-  Setting type to a ______ modular scale
+  Setting type to a perfect fourth(3:4) modular scale
   http://www.modularscale.com/
 */
 
 html {
-  font-family: 'Futura','Trebuchet MS','Arial',sans-serif; 
-  font-size: 1.25em; /* 20/16 = 1.25*/
-  line-height: 1.2em /* 24 / 20 = 1.2em */
-  font-weight: 350;
-  
+    
+  font-size: 1em;/*16px*/
+  line-height: 1.2em; /*19.2px @ 16;*/
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-weight: 400;
+  width:100%;
+    height:100%;
+    margin: 0px auto;
+
 }
 
 body {
-    
+   
     background: url(../img/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
     -o-background-size: cover;      /* Opera*/
     background-size: cover;         /* Generic*/
+  
 }
 
 
+/*all em's are divided by new base 16*/
 h1 {
-  text-align: center; /* 80 / 20 = 4em */
-  padding-top: 2em;
-  font-size: 1.75em; /* 30 / 20 = 1.5em */
-  font-family:inherit;
-  color: #C6263D;
-  opacity: .90;
-}
-
-h2, h3 {
-  font-size: 1.333em;/*21px @ 16;*/
+  font-size: 1.777em;/*28.43px @ 16;*/
+  line-height: 1.351em;/*38.4px @ 28.43px;*/
   font-family: inherit;
   text-align: center;
 }
+
+h2, h3 {
+  font-size: 1.333em;/*21.328px @ 16;*/
+  font-family: inherit;
+  text-align: center;
+}
+
+/*h3 {
+}*/
 
 li {
   list-style-type: none;
@@ -53,68 +234,101 @@ li {
 
 a {
   text-decoration: none;
-  color: #788f99;
+  color: #778899;
 }
 
 li a {
   text-decoration: none;
-  color: #788f99;
+  color: #778899;
 }
 
-/* ==========FORM============= */
-
-input, label {
-  display: block;
+/* ======= Form =============*/
+label,
+input {
   box-sizing: border-box;
+  display: block;
   font-family: inherit;
+  /*font-size: inherit;
+  line-height: inherit;*/
 }
-
 
 /* ===== RESPONSIVE MEDIA ===== */
-
-img {
+img, audio, video {
   display: block;
   max-width: 100%;
 }
 
 .menu:hover {
   color: red;
+  text-decoration: underline;
+}
+
+.title:hover {
+  color: red;
+  text-decoration: underline;
 }
 
 #toggle{
   position: relative;
+  z-index: 1;
 }
 
-#main-button {
+
+#logo {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+#burgerMenu {
   background-color: #D3D3D3;
+  z-index: 1;
   position: absolute;
   width: auto;
   height: auto;
-  margin: 0em, 0em, 0, -3.25em;
-  padding: 3.125em; /* 50px/16px */
-  padding-top: 0.625em; /* 10px/16px */
+  margin: 0px 0 0 -50px;
+  padding: 50px;
+  padding-top: 10px;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  transition: transform 0.5s;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#toggle input{
+  display: block;
+  position: absolute;
+  width: 44px;
+  height: 22.4px;
+  top: -2px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 3;
+}
+
+#toggle input:checked ~ ul {
+  transform: scale(1.0, 1.0);
+  opacity: 1;
 }
 
 /* ===== LAYOUT STYLES ===== */
-
-#main-menu {
-padding: 0.624em;
+#hamburger {
+padding: 10px
 border: 0;
+z-index: 99;
 }
 
 #content {
-  padding: 1.3em;
+  padding: 1.351em;/*38.4px @ 28.43px;*/
 }
 
 #login-form {
-  background-color: #DCDCDC;
-  max-width: 50%;
-  border-radius: 0.3em;
-  padding: 1.351em;/*38.4px @ 28.43px;*/
+  background-color: #000;
+  opacity: 0.7;
+  border-radius: 0.9em;
+  padding: 2.351em;/*38.4px @ 28.43px;*/
 }
+
 
 #input-pass {
   padding-top: 1em;
@@ -125,7 +339,7 @@ border: 0;
   padding-bottom: 1em;
 }
 
-#h1 {
+#header {
   padding-top: 1em;
   padding-bottom: 1em;
   text-shadow: 0.0625em 0.0625em 0.125em #000;
@@ -140,6 +354,12 @@ footer {
   /*position: relative;*/
   text-align: center;
   background-color: #CC0000;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  text-align: center;
 }
 
 .foot {
@@ -162,14 +382,48 @@ table {
 
 td,
 th {
-  border: 0.0625em solid;
+  border: 0.0625em /*1px*/ solid;
   padding: 0.0625em;
   display: table-cell;
 }
 
+/****FLEXBOX STUFF FOR MAIN-PAGE IDK WHERE TO PUT IT*********************/
+
+#main section {
+  border-style: solid;
+  border-width: thick;
+}
+
+#main {
+  min-height: 31.25em;
+  margin-top: 3em;
+  /*padding: 0em;*/
+  display: flex;
+  flex-flow: row;
+  /*background-color: green;*/
+}
+#main > #leftCol {
+  margin: 0.375em;
+  padding-left: 0.3125em;
+  padding-right: 0.3125em;
+  flex: 1 6 33%;
+  order: 1;
+  /*background-color: blue;*/
+}
+
+#main > #midCol {
+  margin: 0.375em;
+  padding-left: 0.3125em;
+  padding-right: 0.3125em;
+  flex: 1 6 33%;
+  order: 2;
+  /*background-color: yellow;*/
+}
+
+
+
 
 /* ===== MODULAR STYLES ===== */
-
 .forgot:hover {
   text-decoration: underline;
   color: #FF0000;
@@ -181,15 +435,38 @@ th {
 
 .error {
   color: red;
+  /*border: 0.1em solid;
+  border-radius: 0.1em;*/
 }
-
 /* ===== STATE STYLES ===== */
 
+/* 3:4 */
+/*3 + 4 = 7
+500 / 9.6px = 52.08
+3 x 52.08 = 156.24px Grid 1
+4 x 52.08 = 208.32px Grid 2
+768 / 9.6px = 80px
+3 x 80px = 240px Grid 1
+4 x 80px = 320px Grid 2
+*/
 
-@media screen and (min-width: ) { 
-
+/* 500px @ 16px for tablet/ipad scale */
+@media screen and (min-width: 31.25em) {
+  #login-form {
+    width: 41.66%; /*156.24/500=0.3124, 208.32/500=0.4166*/
+    margin-left: 25%;
+  }
 }
 
-@media screen and (min-width: ) { 
- 
+/* 768px @ 16px for tablet/ipad scale */
+@media screen and (min-width: 48em) {
+  html {
+    font-size: 1.333em;/*21.328px @ 16px*/
+    line-height: 1.1998em;/*25.59px @ 21.328px*/
+  }
+
+ #login-form {
+    width: 31.24%; /*156.24/500=0.3124, 208.32/500=0.4166*/
+    margin-left: 30%;
+  }
 }
