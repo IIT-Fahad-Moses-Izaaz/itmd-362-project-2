@@ -74,13 +74,7 @@ input, label {
 }
 
 /* ===== STATE STYLES ===== */
-.hasjs input[type=""] {
- 
-}
 
-.hasjs input[type=""].active {
-  position: static;
-}
 
 @media screen and (min-width: ) { 
 
