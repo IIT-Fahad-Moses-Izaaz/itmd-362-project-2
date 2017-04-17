@@ -88,16 +88,88 @@ img {
   transition: transform 0.5s;
 }
 
-
-
 /* ===== LAYOUT STYLES ===== */
+
+#main-menu {
+padding: 0.624em;
+border: 0;
+}
+
+#content {
+  padding: 1.3em;
+}
+
+#login-form {
+  background-color: #DCDCDC;
+  border-radius: 0.3em;
+  padding: 1.351em;/*38.4px @ 28.43px;*/
+}
+
+#input-pass {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#input-submit {
+  padding-bottom: 1em;
+}
+
+#h1 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-shadow: 0.0625em 0.0625em 0.125em #000;
+}
+
+.hd {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer {
+  /*position: relative;*/
+  text-align: center;
+  background-color: #CC0000;
+}
+
+.foot {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: white;
+}
+
+table {
+  border-spacing: 0.0625em;
+  border-collapse: collapse;
+  background-color: #D3D3D3;
+  text-align: center;
+  table-layout: fixed;*/
+  width: /*100%;*/ 500px;
+  word-wrap: break-word;*/
+  border: 0.125em /*2px*/ solid;
+
+}
+
+td,
+th {
+  border: 0.0625em solid;
+  padding: 0.0625em;
+  display: table-cell;
+}
+
 
 /* ===== MODULAR STYLES ===== */
 
-#iitlogo {
-    margin-left: auto;
-    margin-right: auto;
-    display:block;
+.forgot:hover {
+  text-decoration: underline;
+  color: #FF0000;
+}
+
+#submit:hover {
+  background-color: #C0C0C0;
+}
+
+.error {
+  color: red;
 }
 
 /* ===== STATE STYLES ===== */
