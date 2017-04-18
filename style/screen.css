@@ -320,6 +320,10 @@ z-index: 99;
 
 #content {
   padding: 1.351em;/*38.4px @ 28.43px;*/
+  margin: 2.2em auto;
+  width: 50%;
+    padding: 10px;
+  
 }
 
 #login-form {
@@ -512,4 +516,30 @@ nav {
 
 .nav a:hover {
   background-color: gray;
+}
+
+.test1 {
+    padding:  2em;
+}
+
+.editbtn
+{
+    padding:  5em;
+}
+
+#table1 {
+    margin: 1em auto auto auto;
+    padding: 1em;
+}
+
+
+.fall2016 {
+    padding:  1.5em;
+}
+
+input.largerCheckbox
+{
+    margin: auto;
+width: 30px;
+height: 30px;
 }
