@@ -9,9 +9,6 @@
         <nav class="nav">
           <ul>
             <li id="active"><a href="../index.html">LOGOUT</a></li>
-            <li><a href="under_construction/index.html">Look-Up Courses</a></li>
-            <li><a href="under_construction/index.html">Add Course</a></li>
-            <li><a href="under_construction/index.html">Drop Course</a></li>
           </ul>
 </nav>
 
@@ -29,38 +26,61 @@
         <li style="list-style: none; display: inline">
           <section class="tables">
             <div class="cmenu" style="margin-left: 2em">
-              <h4>Your Courses</h4><button class="term" id="f16">Fall 2016</button> <button class="term" id="s17">Spring 2017</button> <button class="term" id="f17">Fall 2017</button> <button id="back">Back</button>
+              <h4>Your Courses</h4><button class="term" id="f16">Add Course</button> <button class="term" id="s17">Drop Course</button> <button id="back">Back</button>
             </div>
             <table class="fall2016">
               <tr>
                 <th class="hd">Course ID</th>
                 <th class="hd">Course Name</th>
-                <th class="hd">Midterm Grade</th>
-                <th class="hd">Final Grade</th>
                 <th class="hd">Course Meeting Times</th>
+                  <th class="hd">Registration Status</th>
               </tr>
               <tr>
                 <td>ITM 312</td>
                 <td>Learn C++</td>
-                <td>A</td>
-                <td>A</td>
                 <td>F 10-11:15</td>
+                <td>Registered</td>
               </tr>
               <tr>
                 <td>ITMD 361</td>
                 <td>Enhance your web presence</td>
-                <td>B</td>
-                <td>B</td>
                 <td>MW 15:15-16:30</td>
+                <td>Registered</td>
               </tr>
               <tr>
                 <td>MATH230</td>
                 <td>Must take class</td>
-                <td>D</td>
-                <td>C</td>
                 <td>TR 10:00-11:15</td>
+                <td>Registered</td>
+                  
               </tr>
+             </table>
+
+          
+
+               <table class="fall2016" id="table1">
+
+
+              <tr id="test1">  
+
+                 <td class = "hd" contenteditable="false"> Enter CRN: </td>
+                  <td width="29%" contenteditable="true"> </td>
+                  <td width="29%" contenteditable="true"> </td>
+                  <td width="29%" contenteditable="true"> </td>
+              
+            </tr>
+              
+             
+
+
+                <tr>
+                    <td colspan="4"><button width ="100%" >SUBMIT</button></td>
+                </tr>
+
             </table>
+
+              
+
             <table class="spring2017">
               <tr>
                 <th class="hd">Course ID</th>
@@ -75,6 +95,7 @@
                 <td>A</td>
                 <td>N/A</td>
                 <td>MW 10-11:15</td>
+                 <td><input type="checkbox" class="largerCheckbox" name="checkBox" />&nbsp;</td>
               </tr>
               <tr>
                 <td>ITMD311</td>
@@ -82,6 +103,7 @@
                 <td>B</td>
                 <td>N/A</td>
                 <td>MW 13:50-15:05</td>
+                <td><input type="checkbox" class="largerCheckbox" name="checkBox" />&nbsp;</td>
               </tr>
               <tr>
                 <td>EG 325</td>
@@ -89,6 +111,7 @@
                 <td>A</td>
                 <td>N/A</td>
                 <td>TF 17-18:15</td>
+                    <td><input type="checkbox" class="largerCheckbox" name="checkBox" />&nbsp;</td>
               </tr>
               <tr>
                 <td>ITMM471</td>
@@ -96,31 +119,17 @@
                 <td>A</td>
                 <td>N/A</td>
                 <td>TR 11:25-12:40</td>
+                    <td><input type="checkbox" class="largerCheckbox" name="checkBox" />&nbsp;</td>
               </tr>
+
+                <tr>
+                
+                     <td colspan="5"><button width ="100%" >DROP SELECTED COURSES</button></td>
+
+
+                </tr>
             </table>
-            <table class="fall2017">
-              <tr>
-                <th class="hd">Course ID</th>
-                <th class="hd">Course Name</th>
-                <th class="hd">Midterm Grade</th>
-                <th class="hd">Final Grade</th>
-                <th class="hd">Course Meeting Times</th>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td></td>
-              </tr>
-            </table>
+         
           </section>
         </li>
       </ul>
